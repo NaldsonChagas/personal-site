@@ -5,7 +5,7 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['**/*.d.ts', '**/dist', '**/node_modules', '**/coverage'] },
+  { ignores: ['**/*.d.ts', '**/dist', '**/dist-server', '**/node_modules', '**/coverage'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
@@ -25,6 +25,10 @@ export default tseslint.config(
       'vue/html-indent': ['error', 2],
       'vue/multi-word-component-names': ['error', { ignores: ['DesktopLayout', 'HomeView'] }],
     },
+  },
+  {
+    files: ['**/*.vue'],
+    rules: { 'no-useless-assignment': 'off' },
   },
   eslintConfigPrettier
 );
