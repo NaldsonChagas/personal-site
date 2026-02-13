@@ -48,7 +48,7 @@ const { t } = useI18n();
         </div>
       </div>
       <div class="order-1 md:order-2 md:w-1/2 flex justify-center pt-2 md:pt-0">
-        <ProfilePhoto :alt="t('heroPhotoAlt')">
+        <ProfilePhoto :alt="t('heroPhotoAlt')" :eager="true">
           <ExperienceBadge />
         </ProfilePhoto>
       </div>
