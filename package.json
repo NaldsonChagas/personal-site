@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "postinstall": "find node_modules -path '*@esbuild/linux-x64/bin/esbuild' -exec chmod +x {} \\; 2>/dev/null || true",
     "dev": "vite",
     "build": "vue-tsc -b && vite build && tsc -p tsconfig.server.json",
     "preview": "vite preview",
