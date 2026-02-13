@@ -2,6 +2,7 @@
 import AppHeader from '@/components/AppHeader.vue';
 import HeroSection from '@/components/HeroSection.vue';
 import AboutSection from '@/components/AboutSection.vue';
+import CaseStudiesSection from '@/components/CaseStudiesSection.vue';
 </script>
 
 <template>
@@ -28,9 +29,7 @@ import AboutSection from '@/components/AboutSection.vue';
         </div>
       </header>
       <AboutSection />
-      <section id="cases">
-        <!-- Cases placeholder -->
-      </section>
+      <CaseStudiesSection />
     </main>
     <footer id="contact">
       <!-- Contact placeholder -->

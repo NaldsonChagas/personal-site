@@ -4,4 +4,5 @@
 @import './styles/layout.css';
 @import './styles/components/nav.css';
 @import './styles/components/metric-card.css';
+@import './styles/components/case-grid.css';
 @import './styles/utilities.css';
