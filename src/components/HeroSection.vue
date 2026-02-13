@@ -9,10 +9,10 @@ const { t } = useI18n();
 <template>
   <div class="relative overflow-hidden">
     <div
-      class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12"
+      class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12"
     >
       <div
-        class="order-2 md:order-1 md:w-1/2 space-y-6 text-center md:text-left"
+        class="order-2 md:order-1 md:w-1/2 space-y-4 md:space-y-6 text-center md:text-left"
       >
         <div
           class="inline-block px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-[10px] md:text-xs font-bold uppercase tracking-widest"
