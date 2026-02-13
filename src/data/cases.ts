@@ -13,7 +13,7 @@ export interface CaseItem {
 export const cases: CaseItem[] = [
   {
     categoryKey: 'case6Category',
-    techStack: 'Fastify/Node',
+    techStack: 'Node/Fastify/PHP/Laravel',
     titleKey: 'case6Title',
     problemKey: 'case6Problem',
     actionKey: 'case6Action',
@@ -31,7 +31,7 @@ export const cases: CaseItem[] = [
   },
   {
     categoryKey: 'case4Category',
-    techStack: 'Java/PHP/Node',
+    techStack: 'Java/PHP/Laravel/Spring',
     titleKey: 'case4Title',
     problemKey: 'case4Problem',
     actionKey: 'case4Action',
