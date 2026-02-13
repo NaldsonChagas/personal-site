@@ -4,6 +4,11 @@ export const messages: Record<Locale, Record<string, string>> = {
   en: {
     about: 'About',
     aboutMe: 'About me',
+    aboutIntro1:
+      "I am a software engineer with over 8 years of experience, specializing in complex backend challenges. Throughout my career, I've led critical migrations and architectural optimizations for high-scale environments.",
+    aboutIntro2:
+      "My approach focuses on delivering measurable performance gains, ensuring system stability, and implementing robust integrations that drive business value. I enjoy working on complex systems where architecture, performance and business impact intersect. I'm especially motivated by legacy recovery projects and building scalable platforms from scratch.",
+    getInTouch: 'Get in Touch',
     impactfulCases: 'Impactful Cases',
     hireMe: 'Hire Me',
     contact: 'Contact',
@@ -16,10 +21,28 @@ export const messages: Record<Locale, Record<string, string>> = {
     heroDescriptionSuffix: ', system modernization, and scalable microservices architectures.',
     linkedIn: 'LinkedIn',
     heroPhotoAlt: 'Naldson Bento Chagas, backend developer',
+    skillArchitecture: 'Architecture',
+    skillArchitectureDesc: 'Clean, Modular, and Hexagonal patterns for scalable systems.',
+    skillArchitectureDescShort: 'Clean, Modular & Hexagonal.',
+    skillRecovery: 'Recovery',
+    skillRecoveryDesc: 'Expertise in modernizing legacy PHP and Node.js systems.',
+    skillRecoveryDescShort: 'Modernizing legacy systems.',
+    skillMicroservices: 'Microservices',
+    skillMicroservicesDesc:
+      'Decoupled distributed systems and event-driven architecture.',
+    skillMicroservicesDescShort: 'Event-driven distribution.',
+    skillAws: 'AWS',
+    skillAwsDesc: 'Cloud-native development and serverless infrastructure.',
+    skillAwsDescShort: 'Cloud-native development.',
   },
   pt: {
     about: 'Sobre',
     aboutMe: 'Sobre mim',
+    aboutIntro1:
+      'Sou engenheiro de software com mais de 8 anos de experiência construindo e modernizando sistemas críticos em setores como energia, telecomunicações, varejo farmacêutico, banco digital e iGaming. Ao longo da minha carreira, liderei migrações críticas e otimizações arquiteturais para ambientes de alta escala.',
+    aboutIntro2:
+      'Minha abordagem foca em entregar ganhos de performance mensuráveis, garantindo estabilidade do sistema e implementando integrações robustas que geram valor real para o negócio. Gosto de trabalhar em sistemas complexos onde arquitetura, performance e impacto de negócio se cruzam. Sou especialmente motivado por projetos de recuperação de legados e construção de plataformas escaláveis do zero.',
+    getInTouch: 'Fale Comigo',
     impactfulCases: 'Cases de Impacto',
     hireMe: 'Contrate-me',
     contact: 'Contato',
@@ -32,5 +55,18 @@ export const messages: Record<Locale, Record<string, string>> = {
     heroDescriptionSuffix: ', modernização de sistemas e arquiteturas de microserviços escaláveis.',
     linkedIn: 'LinkedIn',
     heroPhotoAlt: 'Naldson Bento Chagas, desenvolvedor backend',
+    skillArchitecture: 'Arquitetura',
+    skillArchitectureDesc: 'Padrões Clean, Modular e Hexagonal para sistemas escaláveis.',
+    skillArchitectureDescShort: 'Limpa, Modular e Hexagonal.',
+    skillRecovery: 'Recuperação',
+    skillRecoveryDesc: 'Expertise em modernização de sistemas legados PHP e Node.js.',
+    skillRecoveryDescShort: 'Modernização de legados.',
+    skillMicroservices: 'Microsserviços',
+    skillMicroservicesDesc:
+      'Sistemas distribuídos desacoplados e arquitetura orientada a eventos.',
+    skillMicroservicesDescShort: 'Orientado a eventos.',
+    skillAws: 'AWS',
+    skillAwsDesc: 'Desenvolvimento cloud-native e infraestrutura serverless.',
+    skillAwsDescShort: 'Desenvolvimento cloud.',
   },
 };

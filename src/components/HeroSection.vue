@@ -25,9 +25,7 @@ const { t } = useI18n();
         <p
           class="text-lg md:text-xl text-gray-400 max-w-xl leading-relaxed mx-auto md:mx-0 px-4 md:px-0 max-w-sm md:max-w-xl"
         >
-          {{ t('heroDescriptionPrefix') }}
-          <span class="text-white">{{ t('heroDescriptionHighlight') }}</span>
-          {{ t('heroDescriptionSuffix') }}
+          {{ t('heroDescriptionPrefix') }}{{ t('heroDescriptionHighlight') }}{{ t('heroDescriptionSuffix') }}
         </p>
         <div
           class="flex flex-col w-full max-w-[280px] mx-auto md:mx-0 md:max-w-none md:flex-row flex-wrap justify-center md:justify-start gap-3 md:gap-4 pt-4"

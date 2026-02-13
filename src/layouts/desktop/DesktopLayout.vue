@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import AppHeader from '@/components/AppHeader.vue';
 import HeroSection from '@/components/HeroSection.vue';
+import AboutSection from '@/components/AboutSection.vue';
 </script>
 
 <template>
@@ -26,9 +27,7 @@ import HeroSection from '@/components/HeroSection.vue';
           <HeroSection />
         </div>
       </header>
-      <section id="about" aria-labelledby="about-heading">
-        <!-- About placeholder -->
-      </section>
+      <AboutSection />
       <section id="cases">
         <!-- Cases placeholder -->
       </section>
