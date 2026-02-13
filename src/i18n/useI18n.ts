@@ -1,7 +1,17 @@
 import { ref, watch } from 'vue';
 import { messages, type Locale } from './messages';
 
-const locale = ref<Locale>('en');
+function getInitialLocale(): Locale {
+  if (typeof navigator === 'undefined') return 'en';
+  const lang =
+    navigator.language ||
+    (navigator.languages && navigator.languages[0]) ||
+    'en';
+  const primary = lang.toLowerCase().split('-')[0];
+  return primary === 'pt' ? 'pt' : 'en';
+}
+
+const locale = ref<Locale>(getInitialLocale());
 
 function setDocumentLang(lang: Locale): void {
   if (typeof document !== 'undefined' && document.documentElement) {
