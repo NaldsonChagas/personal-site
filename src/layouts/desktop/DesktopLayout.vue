@@ -1,12 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AppHeader from '@/components/AppHeader.vue';
+</script>
 
 <template>
   <div class="desktop-layout">
-    <header>
-      <nav aria-label="Main">
-        <!-- Nav placeholder -->
-      </nav>
-    </header>
+    <AppHeader />
     <main>
       <section id="about" aria-labelledby="about-heading">
         <!-- About placeholder -->

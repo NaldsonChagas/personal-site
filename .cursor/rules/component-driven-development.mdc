@@ -1,0 +1,19 @@
+---
+description: Think in components before implementing; list reuse vs new
+alwaysApply: true
+---
+
+# Component-Driven Development
+
+Before implementing any UI (e.g. header, section, page):
+
+1. **Plan in components**: Identify what the feature is made of in terms of components.
+2. **Reuse first**: List which **existing** components can be used (from the codebase or design system).
+3. **Gap**: List which **new** components need to be created (name + single responsibility each).
+4. **Then implement**: Build or compose using that list; adjust the list only if the implementation reveals a better split.
+
+Deliverable when starting a feature: a short plan such as:
+- "For the **header**: reuse `AppLogo`, `LangSwitch`; create `HeaderNav`, `MobileMenuButton`."
+- "For the **hero**: create `HeroSection`, `ProfilePhoto`, `ExperienceBadge`; no existing components."
+
+This keeps structure clear, avoids duplicate components, and aligns with SRP.

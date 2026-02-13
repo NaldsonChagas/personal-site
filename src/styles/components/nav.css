@@ -1,0 +1,8 @@
+.lang-switch-active {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.mobile-menu-open {
+  overflow: hidden;
+}
