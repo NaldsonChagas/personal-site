@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vue-tsc -b && vite build && tsc -p tsconfig.server.json",
     "preview": "vite preview",
-    "start": "tsx src/server/index.ts",
+    "start": "node dist-server/index.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",

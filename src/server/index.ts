@@ -1,10 +1,8 @@
 import compression from 'compression';
 import express from 'express';
 import path from 'path';
-import { fileURLToPath } from 'node:url';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const staticDir = path.join(__dirname, '..', '..', 'dist');
+const staticDir = path.join(process.cwd(), 'dist');
 const PORT = Number(process.env.PORT) || 3000;
 
 const LONG_CACHE = 'public, max-age=31536000, immutable';
