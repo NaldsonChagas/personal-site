@@ -3,6 +3,7 @@ import AppHeader from '@/components/AppHeader.vue';
 import HeroSection from '@/components/HeroSection.vue';
 import AboutSection from '@/components/AboutSection.vue';
 import CaseStudiesSection from '@/components/CaseStudiesSection.vue';
+import AppFooter from '@/components/AppFooter.vue';
 </script>
 
 <template>
@@ -31,8 +32,6 @@ import CaseStudiesSection from '@/components/CaseStudiesSection.vue';
       <AboutSection />
       <CaseStudiesSection />
     </main>
-    <footer id="contact">
-      <!-- Contact placeholder -->
-    </footer>
+    <AppFooter />
   </div>
 </template>
