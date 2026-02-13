@@ -6,9 +6,9 @@
   "scripts": {
     "postinstall": "find node_modules -path '*@esbuild/linux-x64/bin/esbuild' -exec chmod +x {} \\; 2>/dev/null || true",
     "dev": "vite",
-    "build": "vue-tsc -b && vite build && tsc -p tsconfig.server.json",
+    "build": "vue-tsc -b && tsc -p tsconfig.server.json && vite build",
     "preview": "vite preview",
-    "start": "node dist-server/index.js",
+    "start": "node dist/index.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",

@@ -5,7 +5,7 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['**/*.d.ts', '**/dist', '**/dist-server', '**/node_modules', '**/coverage'] },
+  { ignores: ['**/*.d.ts', '**/dist', '**/node_modules', '**/coverage'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],

@@ -4,7 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const staticDir = path.join(__dirname, '..', 'dist');
+const staticDir = path.join(__dirname, 'public');
 const PORT = Number(process.env.PORT) || 3000;
 
 const LONG_CACHE = 'public, max-age=31536000, immutable';

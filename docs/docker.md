@@ -1,6 +1,6 @@
 # Docker
 
-Run the site in a container: the image builds the frontend (Vite) and runs the Express server serving `dist/`.
+Run the site in a container: the image builds the frontend (Vite) and runs the Express server serving `dist/public/`.
 
 ## Prerequisites
 

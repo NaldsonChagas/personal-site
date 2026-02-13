@@ -10,7 +10,7 @@ Technical stack and tooling for the personal site (frontend and backend).
 | **Vite**       | Build tool and dev server. Current major: 7.x.                 |
 | **Vue 3**      | Frontend framework. Composition API.                           |
 | **TypeScript** | Strict mode; all app code in `src/` is typed.                  |
-| **Express**    | Production server; serves `dist/`.                              |
+| **Express**    | Production server; serves `dist/public/`.                |
 
 - **Scripts**: `dev` (Vite dev server), `build` (vue-tsc + Vite build), `preview` (preview production build), `start` (Express server for production).
 - **Path alias**: `@` points to `src/` (e.g. `import X from '@/components/X.vue'`).
@@ -35,7 +35,7 @@ Technical stack and tooling for the personal site (frontend and backend).
 ## Backend
 
 - **Express** server in TypeScript under `src/server/`.
-- Serves static files from `dist/` (output of `pnpm build`).
-- Any request that does not match a file in `dist/` is redirected to `/` (single-page site).
+- Serves static files from `dist/public/` (Vite output of `pnpm build`).
+- Any request that does not match a file in `dist/public/` is redirected to `/` (single-page site).
 - Production: run `pnpm build` then `pnpm start` to serve the site.
 - The app can also be run via Docker; see [docker.md](docker.md).
