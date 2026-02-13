@@ -1,8 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-dark);
   color: #ffffff;
-  scroll-behavior: smooth;
 }
 
 .mono {
