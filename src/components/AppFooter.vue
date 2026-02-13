@@ -19,7 +19,7 @@ const { t } = useI18n();
       <ContactDescription />
       <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6 mb-16">
         <ContactLinkButton
-          href="mailto:naldson.bc@gmail.com"
+          href="mailto:contact@naldson.dev"
           icon="mail"
           :label="t('contactEmailLabel')"
           variant="primary"
