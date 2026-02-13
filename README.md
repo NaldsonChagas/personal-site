@@ -12,6 +12,7 @@ Personal site and portfolio for **Naldson Bento Chagas** — Senior Backend Deve
 - **Vue 3** + **Vue Router**
 - **Vite**
 - **Tailwind CSS**
+- **Express** (serves production build)
 
 ---
 
@@ -31,6 +32,29 @@ pnpm build
 
 # Preview production build locally
 pnpm preview
+
+# Production: build then run Express server
+pnpm build
+pnpm start
 ```
 
-Development server runs at `http://localhost:5173` (or the port shown in the terminal).
+Development server runs at `http://localhost:5173` (or the port shown in the terminal). Production server runs at `http://localhost:3000` (or set `PORT`).
+
+---
+
+## Run with Docker
+
+**Prerequisites:** Docker and Docker Compose installed.
+
+```bash
+# Build and run
+docker compose up --build
+
+# Run in background
+docker compose up --build -d
+
+# Stop
+docker compose down
+```
+
+The app is available at `http://localhost:3000`.

@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.cursor
+docs
+layouts
+*.log
+.env*
+coverage
+.husky
+.vscode
+.idea
+*.md
+!README.md

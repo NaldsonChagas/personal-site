@@ -49,6 +49,7 @@ The project follows rules defined in `.cursor/rules/`:
 ## Documents
 
 - **README.md** (this file): project overview, stack, and standards.
-- **[structure.md](structure.md)**: Frontend folder structure and responsibilities.
+- **[structure.md](structure.md)**: Project folder structure (frontend and backend in `src/`).
 - **[stack.md](stack.md)**: Build tools, styling, lint/format, router, i18n, and Husky.
+- **[docker.md](docker.md)**: Build and run with Docker (Dockerfile and docker-compose).
 - Other specific documents can be added under `docs/` as needed (e.g. architecture, deploy).
