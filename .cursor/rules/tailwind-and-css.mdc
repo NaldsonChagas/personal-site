@@ -1,0 +1,46 @@
+---
+description: Tailwind usage and CSS in small, focused files
+globs: "**/*.vue,**/*.css,**/*.scss"
+alwaysApply: false
+---
+
+# Tailwind and CSS Organization
+
+## Tailwind
+
+- Use **Tailwind** as the base for styles; utility classes in the template.
+- Customizations (colors, fonts, theme) in `tailwind.config.js`; avoid magic values in HTML.
+- Prefer Tailwind classes over custom CSS when equivalent (e.g. `rounded-lg` instead of inline `border-radius: 0.5rem`).
+
+## CSS in small files with clear responsibilities
+
+Split CSS into files by responsibility, for example:
+
+- **`variables.css`** (or `_tokens.css`): `:root`, color variables, typography, spacing.
+- **`base.css`**: reset/normalize, `body`, base typography, scroll.
+- **`layout.css`**: grid, container, page structure (header/footer/main).
+- **`components/*.css`**: one file per component or group (e.g. `nav.css`, `card.css`, `button.css`).
+- **`utilities.css`**: utility classes not provided by Tailwind (e.g. `.gradient-text`, `.glass-card`).
+
+Each file should have a single purpose (SRP). Import order: variables → base → layout → components → utilities.
+
+## Example structure
+
+```
+src/
+  assets/
+    styles/
+      variables.css
+      base.css
+      layout.css
+      components/
+        nav.css
+        metric-card.css
+      utilities.css
+```
+
+## When to use custom CSS
+
+- Design tokens and themes (CSS variables).
+- Reused animations or complex effects.
+- Components with many variants that would clutter the template (extract to a single class).

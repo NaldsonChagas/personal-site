@@ -1,0 +1,19 @@
+---
+description: No unnecessary comments; keep complexity low
+alwaysApply: true
+---
+
+# Code Clarity
+
+## No unnecessary comments
+
+- Do **not** add comments that restate what the code does (e.g. `// loop over users` above a `for` loop).
+- Prefer clear names and small functions so the code is self-explanatory.
+- Comments are acceptable only when they explain **why** something is done (business rule, workaround, non-obvious constraint) or document public APIs when useful.
+
+## Low complexity
+
+- Avoid high cyclomatic complexity: split conditionals and loops into well-named functions.
+- Prefer flat structures and early returns over deep nesting.
+- If a function or component does too much or is hard to follow, break it down (SRP).
+- No unnecessary abstractions or indirection — keep the code easy to read and change.

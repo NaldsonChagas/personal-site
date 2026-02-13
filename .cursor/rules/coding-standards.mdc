@@ -1,0 +1,49 @@
+---
+description: Code standards (Google Style Guide, DRY, KISS, SRP)
+alwaysApply: true
+---
+
+# Code Standards
+
+The project uses **TypeScript**. Follow the **Google TypeScript Style Guide** and DRY, KISS, and SRP principles.
+
+## Google Style Guide (summary)
+
+- **Encoding**: UTF-8. **Indentation**: 2 spaces (no tabs).
+- **File order**: imports → implementation; one blank line between sections.
+- **Naming**: `UpperCamelCase` (classes, interfaces, types); `lowerCamelCase` (variables, functions, props); `CONSTANT_CASE` (constants, enum values).
+- **Imports**: Prefer named imports; default import only when required by the library.
+- No underscore prefixes or suffixes on identifiers.
+
+## DRY (Don't Repeat Yourself)
+
+- Extract repeated strings (e.g. i18n copy) into dedicated modules or files.
+- Reusable components and functions instead of copying code.
+- Centralize constants and theme values (colors, breakpoints).
+
+## KISS (Keep It Simple, Stupid)
+
+- Prefer straightforward solutions; avoid premature abstraction.
+- Functions and components with a clear responsibility and self-explanatory names.
+
+## SRP (Single Responsibility Principle)
+
+- One function does one thing; one component represents one UI concept or logical block.
+- Separate business logic from presentation (composables vs components).
+- One CSS file per “responsibility” (variables, layout, components, utilities).
+
+## Example
+
+```typescript
+// ❌ Avoid: function doing too much
+function handleUser(data) {
+  validate(data);
+  saveToDb(data);
+  sendEmail(data);
+  updateCache(data);
+}
+
+// ✅ Prefer: one responsibility per function
+function validateUserData(data) { /* ... */ }
+function persistUser(data) { /* ... */ }
+```

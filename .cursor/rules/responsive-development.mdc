@@ -1,0 +1,15 @@
+---
+description: Analyze desktop and mobile layouts; always develop with responsiveness
+alwaysApply: true
+---
+
+# Responsive Development
+
+When developing any new feature:
+
+- **Analyze both layouts**: Check `layouts/desktop/code.html` and `layouts/mobile/code.html` (and their PNGs) to understand structure, breakpoints, and behavior on each viewport.
+- **Design mobile-first or parity**: Ensure the feature works and looks correct on small and large screens; use Tailwind breakpoints (`sm`, `md`, `lg`, etc.) consistently.
+- **Test viewports**: Verify behavior at key widths (e.g. 320px, 768px, 1024px); avoid layout breaks or overflow.
+- **Touch and interaction**: On mobile, touch targets and navigation (e.g. hamburger menu) must match the reference; avoid hover-only interactions for critical UI.
+
+Responsiveness is a requirement for every UI change, not an afterthought.

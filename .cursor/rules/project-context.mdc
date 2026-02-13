@@ -1,0 +1,14 @@
+---
+description: Project context — personal site, stack, and assets
+alwaysApply: true
+---
+
+# Project Context
+
+- **Project**: Personal site (Naldson Bento Chagas).
+- **Language**: **TypeScript** (frontend and server).
+- **Runtime**: **Node.js** on the latest **LTS** version (check nodejs.org).
+- **Stack**: Frontend **Vue.js**; **Express** server serving static files and handling routing (SPA fallback).
+- **i18n**: Language support as in the templates under `layouts/` (e.g. `lang="en"` and `lang="pt"`); keep the experience internationalized.
+- **Layout reference**: `layouts/desktop/code.html` and `layouts/mobile/code.html` (HTML + PNG).
+- **Profile photo**: Use the image at **`layouts/IMG_2003.jpg`** (copy to `public/` or assets after build). Do not use external URLs in production.

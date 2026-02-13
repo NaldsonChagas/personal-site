@@ -1,0 +1,36 @@
+---
+description: Semantic HTML and SEO best practices
+globs: "**/*.vue,**/*.html,index.html"
+alwaysApply: false
+---
+
+# Semantic HTML and SEO
+
+## Semantic HTML (current standards)
+
+- **Structure**: Use `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>` to delimit regions.
+- **Headings**: One `<h1>` per page (main name/title); logical hierarchy `<h2>` → `<h3>`.
+- **Navigation**: Main links in `<nav>`; use `<a>` for navigation, `<button>` for actions (e.g. language switch).
+- **Lists**: `<ul>`/`<ol>` for link or item lists; do not use divs for lists.
+- **Images**: Always descriptive `alt` (e.g. "Naldson Bento Chagas, backend developer").
+- **Accessibility**: Correct `lang` on `<html>` (e.g. `lang="en"` or `lang="pt"`); landmarks and labels when needed.
+
+## SEO
+
+- **Title**: Unique and descriptive per route (e.g. "Naldson Bento Chagas | Senior Backend Developer").
+- **Meta**: Unique `description` per page; basic Open Graph when relevant (title, description, image).
+- **URLs**: Friendly and stable; language support via URL or `hreflang`/`lang` per i18n setup.
+- **Content**: Important text in HTML (not only in images); headings that reflect the content.
+- **Performance**: Fast load and critical content in first paint (see performance rules).
+
+## Landmarks example
+
+```html
+<header>...</header>
+<nav aria-label="Main">...</nav>
+<main>
+  <section id="about" aria-labelledby="about-heading">...</section>
+  <section id="cases">...</section>
+</main>
+<footer id="contact">...</footer>
+```

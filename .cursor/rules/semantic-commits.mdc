@@ -1,0 +1,21 @@
+---
+description: Use semantic commits with brief, meaningful descriptions
+alwaysApply: true
+---
+
+# Semantic Commits
+
+Use **semantic commit messages** with a short but **accurate description** of what was done.
+
+- **Format**: `<type>(<scope>): <short description>`.
+- **Types**: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, etc.
+- **Description**: One line that actually explains the change — not vague ("update stuff") but not a full essay. The reader should understand what was done without reading the diff.
+
+Examples:
+
+- `feat(hero): add profile photo and 8+ years badge`
+- `fix(nav): close mobile menu on route change`
+- `refactor(i18n): move locale strings to dedicated module`
+- `chore(deps): bump Vue to 3.4`
+
+Avoid: `fix`, `WIP`, `updates`, or descriptions that repeat the type without adding information.

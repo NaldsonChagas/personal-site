@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Naldson Bento Chagas | Senior Backend Developer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Roboto+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      :root {
+        --primary: #10b981;
+        --accent: #3b82f6;
+        --bg-dark: #0a0a0a;
+        --bg-card: #141414;
+        --text-muted: #9ca3af;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-dark);
+        color: #ffffff;
+        scroll-behavior: smooth;
+      }
+      .mono {
+        font-family: 'Roboto Mono', monospace;
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .glass-card {
+        background: rgba(20, 20, 20, 0.8);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      [lang='pt'] {
+        display: none;
+      }
+      .lang-switch-active {
+        color: var(--primary);
+        font-weight: 700;
+      }
+      .case-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 1.5rem;
+      }
+      .metric-card {
+        background: #111111;
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        border-radius: 1.25rem;
+        padding: 2rem;
+        transition: all 0.3s ease;
+      }
+      .metric-card:hover {
+        border-color: rgba(255, 255, 255, 0.1);
+        background: #161616;
+        transform: translateY(-4px);
+      }
+    </style>
+  </head>
+  <body class="antialiased selection:bg-emerald-500/30">
+    <nav class="fixed top-0 w-full z-50 glass-card border-b border-white/5 px-6 py-4">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <div class="text-xl font-bold tracking-tighter flex items-center gap-2">
+          <span class="text-[var(--primary)] material-symbols-outlined">terminal</span>
+          <span>naldson<span class="text-[var(--primary)]">.</span>dev</span>
+        </div>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+          <a class="hover:text-white transition-colors" href="#about">
+            <span lang="en">About</span>
+            <span lang="pt">Sobre</span>
+          </a>
+          <a class="hover:text-white transition-colors" href="#cases">
+            <span lang="en">Impactful Cases</span>
+            <span lang="pt">Cases de Impacto</span>
+          </a>
+          <div class="flex items-center gap-2 border-l border-white/10 pl-8 ml-2">
+            <button
+              class="hover:text-white transition-colors lang-switch-active"
+              onclick="document.querySelectorAll('[lang=\'en\']').forEach(e =&gt; e.style.display = 'inline'); document.querySelectorAll('[lang=\'pt\']').forEach(e =&gt; e.style.display = 'none'); this.classList.add('lang-switch-active'); this.nextElementSibling.nextElementSibling.classList.remove('lang-switch-active')"
+            >
+              EN
+            </button>
+            <span class="text-white/20">|</span>
+            <button
+              class="hover:text-white transition-colors"
+              onclick="document.querySelectorAll('[lang=\'pt\']').forEach(e =&gt; e.style.display = 'inline'); document.querySelectorAll('[lang=\'en\']').forEach(e =&gt; e.style.display = 'none'); this.classList.add('lang-switch-active'); this.previousElementSibling.previousElementSibling.classList.remove('lang-switch-active')"
+            >
+              PT
+            </button>
+          </div>
+          <a
+            class="px-4 py-2 bg-[var(--primary)] text-black rounded-md hover:bg-emerald-400 transition-colors font-bold"
+            href="#contact"
+          >
+            <span lang="en">Hire Me</span>
+            <span lang="pt">Contrate-me</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <header class="relative pt-32 pb-20 px-6 overflow-hidden">
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none opacity-20"
+      >
+        <div
+          class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-emerald-500 rounded-full blur-[120px]"
+        ></div>
+        <div
+          class="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-600 rounded-full blur-[120px]"
+        ></div>
+      </div>
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+        <div class="md:w-1/2 space-y-6 text-center md:text-left">
+          <div
+            class="inline-block px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-widest"
+          >
+            <span lang="en">Senior Backend Developer</span>
+            <span lang="pt">Desenvolvedor Backend Sênior</span>
+          </div>
+          <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight">
+            Naldson Bento Chagas
+          </h1>
+          <p class="text-xl text-gray-400 max-w-xl leading-relaxed mx-auto md:mx-0">
+            <span lang="en"
+              >8+ years of experience specializing in
+              <span class="text-white">high-scale backend systems</span>, system modernization, and
+              scalable microservices architectures.</span
+            >
+            <span lang="pt"
+              >Mais de 8 anos de experiência em
+              <span class="text-white">sistemas de backend de alta escala</span>, modernização de
+              sistemas e arquiteturas de microserviços escaláveis.</span
+            >
+          </p>
+          <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
+            <a
+              class="px-8 py-4 bg-white text-black font-bold rounded-lg hover:scale-105 transition-transform flex items-center gap-2"
+              href="#contact"
+            >
+              <span lang="en">Hire Me</span>
+              <span lang="pt">Contrate-me</span>
+              <span class="material-symbols-outlined text-sm">mail</span>
+            </a>
+            <a
+              class="px-8 py-4 glass-card font-bold rounded-lg hover:bg-white/10 transition-colors border border-white/10 flex items-center gap-2"
+              href="https://www.linkedin.com/in/naldsonbc"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+          <div class="relative group">
+            <div
+              class="absolute -inset-1 bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
+            ></div>
+            <img
+              alt="Naldson Bento Chagas"
+              class="relative rounded-2xl w-80 h-80 object-cover border-2 border-white/10"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFySjxRE6pA9EE4z-U_TtDlMuPJSXXyCw_uRf66xSVUXCMt3Us4M3qebmpB5ksxGUvuqItnOfgXXXj7JnQNfKt3Xz8N7WBnXgSFyN-zpVDZCRMcvYjODP-kDcKVChHoyM5LpRX9kjkbO-ubY6LU5ktOLMx77qdfaGg9nPXFzbDt7f1VxlCKMl0kbnFUBDXwkZvbokSbLQIo8HQ89MYEzcXZYOvhG7Zz11DLnnGLxmc_gdaMrA8YI3T5NC0nwA3B-3ioO2MGHXVzE2B"
+            />
+            <div
+              class="absolute -bottom-6 -right-6 glass-card p-4 rounded-xl border border-white/10"
+            >
+              <div class="text-[var(--primary)] font-bold text-3xl">8+</div>
+              <div class="text-xs text-gray-400 uppercase tracking-tighter">
+                <span lang="en">Years Experience</span>
+                <span lang="pt">Anos de Experiência</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="py-24 px-6 bg-[#0a0a0a]" id="about">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div class="space-y-8 sticky top-32">
+            <div>
+              <h2
+                class="text-sm font-bold text-[var(--primary)] uppercase tracking-widest mb-4 flex items-center gap-3"
+              >
+                <span class="w-8 h-[1px] bg-[var(--primary)]"></span>
+                <span lang="en">About me</span>
+                <span lang="pt">Sobre mim</span>
+              </h2>
+              <div class="text-gray-300 leading-relaxed space-y-6 text-lg">
+                <p lang="en">
+                  I am a software engineer with over 8 years of experience, specializing in complex
+                  backend challenges. Throughout my career, I've led critical migrations and
+                  architectural optimizations for high-scale environments.
+                </p>
+                <p lang="pt">
+                  Sou engenheiro de software com mais de 8 anos de experiência construindo e
+                  modernizando sistemas críticos em setores como energia, telecomunicações, varejo
+                  farmacêutico, banco digital e iGaming. Ao longo da minha carreira, liderei
+                  migrações críticas e otimizações arquiteturais para ambientes de alta escala.
+                </p>
+                <p lang="en">
+                  My approach focuses on delivering measurable performance gains, ensuring system
+                  stability, and implementing robust integrations that drive business value. I enjoy
+                  working on complex systems where architecture, performance and business impact
+                  intersect. I’m especially motivated by legacy recovery projects and building
+                  scalable platforms from scratch.
+                </p>
+                <p lang="pt">
+                  Minha abordagem foca em entregar ganhos de performance mensuráveis, garantindo
+                  estabilidade do sistema e implementando integrações robustas que geram valor real
+                  para o negócio. I enjoy working on complex systems where architecture, performance
+                  and business impact intersect. I’m especially motivated by legacy recovery
+                  projects and building scalable platforms from scratch.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <a
+                class="text-[var(--primary)] font-bold flex items-center gap-2 hover:gap-3 transition-all"
+                href="#contact"
+              >
+                <span lang="en">Get in Touch</span>
+                <span lang="pt">Fale Comigo</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="metric-card">
+              <span class="material-symbols-outlined text-emerald-400 text-3xl mb-6 block"
+                >architecture</span
+              >
+              <h3 class="text-xl font-bold mb-3">
+                <span lang="en">Architecture</span>
+                <span lang="pt">Arquitetura</span>
+              </h3>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                <span lang="en">Clean, Modular, and Hexagonal patterns for scalable systems.</span>
+                <span lang="pt">Padrões Clean, Modular e Hexagonal para sistemas escaláveis.</span>
+              </p>
+            </div>
+            <div class="metric-card">
+              <span class="material-symbols-outlined text-blue-500 text-3xl mb-6 block"
+                >cloud_sync</span
+              >
+              <h3 class="text-xl font-bold mb-3">
+                <span lang="en">Recovery</span>
+                <span lang="pt">Recuperação</span>
+              </h3>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                <span lang="en">Expertise in modernizing legacy PHP and Node.js systems.</span>
+                <span lang="pt">Expertise em modernização de sistemas legados PHP e Node.js.</span>
+              </p>
+            </div>
+            <div class="metric-card">
+              <span class="material-symbols-outlined text-emerald-400 text-3xl mb-6 block"
+                >hub</span
+              >
+              <h3 class="text-xl font-bold mb-3">
+                <span lang="en">Microservices</span>
+                <span lang="pt">Microsserviços</span>
+              </h3>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                <span lang="en">Decoupled distributed systems and event-driven architecture.</span>
+                <span lang="pt"
+                  >Sistemas distribuídos desacoplados e arquitetura orientada a eventos.</span
+                >
+              </p>
+            </div>
+            <div class="metric-card">
+              <span class="material-symbols-outlined text-blue-500 text-3xl mb-6 block">cloud</span>
+              <h3 class="text-xl font-bold mb-3">
+                <span lang="en">AWS</span>
+                <span lang="pt">AWS</span>
+              </h3>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                <span lang="en">Cloud-native development and serverless infrastructure.</span>
+                <span lang="pt">Desenvolvimento cloud-native e infraestrutura serverless.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 px-6" id="cases">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-black mb-4 uppercase tracking-tighter">
+            <span lang="en">Impactful Case Studies</span>
+            <span lang="pt">Cases de Impacto Profissional</span>
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            <span lang="en"
+              >Proven engineering results delivered across Fintech, Retail, and Public Sector
+              ecosystems.</span
+            >
+            <span lang="pt"
+              >Resultados de engenharia comprovados entregues em ecossistemas de Fintech, Varejo e
+              Setor Público.</span
+            >
+          </p>
+        </div>
+        <div class="case-grid">
+          <div
+            class="glass-card rounded-2xl p-8 flex flex-col border border-white/10 hover:border-[var(--primary)]/50 transition-colors group"
+          >
+            <div class="flex justify-between items-start mb-6">
+              <div
+                class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase rounded border border-emerald-500/20"
+              >
+                Public Sector
+              </div>
+              <div class="flex gap-2">
+                <span class="text-gray-500 text-xs font-mono">Angular/PHP</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 group-hover:text-[var(--primary)] transition-colors">
+              CADIC (Urban Census)
+            </h3>
+            <div class="space-y-4 flex-grow">
+              <div>
+                <div class="text-[10px] text-[var(--primary)] font-bold uppercase mb-1">
+                  Problem
+                </div>
+                <p class="text-sm text-gray-400">
+                  Inefficient data processing during large-scale urban census operations.
+                </p>
+              </div>
+              <div>
+                <div class="text-[10px] text-[var(--primary)] font-bold uppercase mb-1">Action</div>
+                <p class="text-sm text-gray-400">
+                  UI modernization and backend optimization using Angular and PHP.
+                </p>
+              </div>
+              <div class="bg-white/5 p-3 rounded-lg border border-white/5">
+                <div class="text-[10px] text-[var(--primary)] font-bold uppercase mb-1">Result</div>
+                <p class="text-sm font-bold text-white">
+                  Achieved 85% processing gain and significantly improved data accuracy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="glass-card rounded-2xl p-8 flex flex-col border border-white/10 hover:border-[var(--accent)]/50 transition-colors group"
+          >
+            <div class="flex justify-between items-start mb-6">
+              <div
+                class="px-3 py-1 bg-blue-500/10 text-blue-400 text-[10px] font-bold uppercase rounded border border-blue-500/20"
+              >
+                Omnichannel
+              </div>
+              <div class="flex gap-2">
+                <span class="text-gray-500 text-xs font-mono">Node/React</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 group-hover:text-[var(--accent)] transition-colors">
+              neWave / Fluctus
+            </h3>
+            <div class="space-y-4 flex-grow">
+              <div>
+                <div class="text-[10px] text-[var(--accent)] font-bold uppercase mb-1">Problem</div>
+                <p class="text-sm text-gray-400">
+                  Fragmented communication and lack of ERP synchronization for B2B.
+                </p>
+              </div>
+              <div>
+                <div class="text-[10px] text-[var(--accent)] font-bold uppercase mb-1">Action</div>
+                <p class="text-sm text-gray-400">
+                  Built complex B2B integrations with multiple ERPs and messaging systems.
+                </p>
+              </div>
+              <div class="bg-white/5 p-3 rounded-lg border border-white/5">
+                <div class="text-[10px] text-[var(--accent)] font-bold uppercase mb-1">Result</div>
+                <p class="text-sm font-bold text-white">
+                  Seamless omnichannel experience with automated ERP inventory sync.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="glass-card rounded-2xl p-8 flex flex-col border border-white/10 hover:border-orange-500/50 transition-colors group"
+          >
+            <div class="flex justify-between items-start mb-6">
+              <div
+                class="px-3 py-1 bg-orange-500/10 text-orange-400 text-[10px] font-bold uppercase rounded border border-orange-500/20"
+              >
+                Fintech
+              </div>
+              <div class="flex gap-2">
+                <span class="text-gray-500 text-xs font-mono">Kafka/Redis/Node</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
+              Banco Midway
+            </h3>
+            <div class="space-y-4 flex-grow">
+              <div>
+                <div class="text-[10px] text-orange-400 font-bold uppercase mb-1">Problem</div>
+                <p class="text-sm text-gray-400">
+                  Need for high-concurrency features like mobile recharge and auto-debit.
+                </p>
+              </div>
+              <div>
+                <div class="text-[10px] text-orange-400 font-bold uppercase mb-1">Action</div>
+                <p class="text-sm text-gray-400">
+                  Architected microservices using Kafka for event-driven processing and Redis.
+                </p>
+              </div>
+              <div class="bg-white/5 p-3 rounded-lg border border-white/5">
+                <div class="text-[10px] text-orange-400 font-bold uppercase mb-1">Result</div>
+                <p class="text-sm font-bold text-white">
+                  Stable, high-throughput financial transactions for millions of users.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="glass-card rounded-2xl p-8 flex flex-col border border-white/10 hover:border-purple-500/50 transition-colors group"
+          >
+            <div class="flex justify-between items-start mb-6">
+              <div
+                class="px-3 py-1 bg-purple-500/10 text-purple-400 text-[10px] font-bold uppercase rounded border border-purple-500/20"
+              >
+                Retail / CI&amp;T
+              </div>
+              <div class="flex gap-2">
+                <span class="text-gray-500 text-xs font-mono">Java/PHP/Node</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 group-hover:text-purple-400 transition-colors">
+              Drogasil
+            </h3>
+            <div class="space-y-4 flex-grow">
+              <div>
+                <div class="text-[10px] text-purple-400 font-bold uppercase mb-1">Problem</div>
+                <p class="text-sm text-gray-400">
+                  Critical failures in subscription systems and legacy instability.
+                </p>
+              </div>
+              <div>
+                <div class="text-[10px] text-purple-400 font-bold uppercase mb-1">Action</div>
+                <p class="text-sm text-gray-400">
+                  Led system recovery using PHP/Java microservices &amp; RabbitMQ.
+                </p>
+              </div>
+              <div class="bg-white/5 p-3 rounded-lg border border-white/5">
+                <div class="text-[10px] text-purple-400 font-bold uppercase mb-1">Result</div>
+                <p class="text-sm font-bold text-white">
+                  Full recovery of the subscription platform with zero data loss.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="glass-card rounded-2xl p-8 flex flex-col border border-white/10 hover:border-yellow-500/50 transition-colors group"
+          >
+            <div class="flex justify-between items-start mb-6">
+              <div
+                class="px-3 py-1 bg-yellow-500/10 text-yellow-400 text-[10px] font-bold uppercase rounded border border-yellow-500/20"
+              >
+                Optimization
+              </div>
+              <div class="flex gap-2">
+                <span class="text-gray-500 text-xs font-mono">Python/NestJS</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 group-hover:text-yellow-400 transition-colors">
+              Finnet Optimization
+            </h3>
+            <div class="space-y-4 flex-grow">
+              <div>
+                <div class="text-[10px] text-yellow-400 font-bold uppercase mb-1">Problem</div>
+                <p class="text-sm text-gray-400">
+                  Bottlenecks in financial data processing workflows.
+                </p>
+              </div>
+              <div>
+                <div class="text-[10px] text-yellow-400 font-bold uppercase mb-1">Action</div>
+                <p class="text-sm text-gray-400">
+                  Refactored core modules using Python and NestJS for efficiency.
+                </p>
+              </div>
+              <div class="bg-white/5 p-3 rounded-lg border border-white/5">
+                <div class="text-[10px] text-yellow-400 font-bold uppercase mb-1">Result</div>
+                <p class="text-sm font-bold text-white">
+                  Dramatic 85% performance boost in daily processing cycles.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="glass-card rounded-2xl p-8 flex flex-col border border-white/10 hover:border-red-500/50 transition-colors group"
+          >
+            <div class="flex justify-between items-start mb-6">
+              <div
+                class="px-3 py-1 bg-red-500/10 text-red-400 text-[10px] font-bold uppercase rounded border border-red-500/20"
+              >
+                High Traffic
+              </div>
+              <div class="flex gap-2">
+                <span class="text-gray-500 text-xs font-mono">Fastify/Node</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 group-hover:text-red-400 transition-colors">
+              EstrelaBet
+            </h3>
+            <div class="space-y-4 flex-grow">
+              <div>
+                <div class="text-[10px] text-red-400 font-bold uppercase mb-1">Problem</div>
+                <p class="text-sm text-gray-400">
+                  Scaling legacy monolithic system for high-concurrency events.
+                </p>
+              </div>
+              <div>
+                <div class="text-[10px] text-red-400 font-bold uppercase mb-1">Action</div>
+                <p class="text-sm text-gray-400">
+                  Architected a new BFF from scratch using Node/Fastify.
+                </p>
+              </div>
+              <div class="bg-white/5 p-3 rounded-lg border border-white/5">
+                <div class="text-[10px] text-red-400 font-bold uppercase mb-1">Result</div>
+                <p class="text-sm font-bold text-white">
+                  Significantly reduced latency and improved developer velocity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-24 px-6 relative border-t border-white/5 overflow-hidden" id="contact">
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <h2 class="text-5xl font-black mb-6">
+          <span lang="en"
+            >Let's build something <span class="gradient-text">exceptional</span>.</span
+          >
+          <span lang="pt"
+            >Vamos construir algo <span class="gradient-text">excepcional</span>.</span
+          >
+        </h2>
+        <p class="text-gray-400 mb-12 text-lg max-w-xl mx-auto leading-relaxed">
+          <span lang="en"
+            >Seeking a Senior Backend Engineer to architect systems or modernize legacy platforms?
+            Let's connect.</span
+          >
+          <span lang="pt"
+            >Procurando um Engenheiro Backend Sênior para arquitetar sistemas ou modernizar
+            plataformas legadas? Vamos conversar.</span
+          >
+        </p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-16">
+          <a
+            class="w-full md:w-auto px-8 py-4 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-2"
+            href="mailto:naldson.bc@gmail.com"
+          >
+            <span class="material-symbols-outlined text-black">mail</span> naldson.bc@gmail.com
+          </a>
+          <a
+            class="w-full md:w-auto px-8 py-4 glass-card border border-white/10 rounded-lg hover:bg-white/5 transition-colors flex items-center justify-center gap-2"
+            href="https://www.linkedin.com/in/naldsonbc"
+            target="_blank"
+          >
+            <span class="material-symbols-outlined">link</span> LinkedIn Profile
+          </a>
+        </div>
+        <div
+          class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-500"
+        >
+          <div>© 2024 Naldson Bento Chagas.</div>
+          <div class="flex gap-8">
+            <span>Senior Backend</span>
+            <span>Architecture</span>
+            <span>Distributed Systems</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+---
+description: Performance best practices for fast loading
+alwaysApply: true
+---
+
+# Performance
+
+The site must load fast. Follow the practices below.
+
+## Assets and network
+
+- **Images**: Use local photo `layouts/IMG_2003.jpg` (or copy to `public/` or assets); optimize (modern format, appropriate dimensions, lazy loading with `loading="lazy"` when off-viewport).
+- **Fonts**: Prefer `font-display: swap`; subset or self-host if it reduces external requests.
+- **Scripts/CSS**: Production build with bundling, minification, and tree-shaking; avoid CDN runtime in prod if the bundle already includes it (e.g. built Tailwind).
+
+## Rendering
+
+- **Critical path**: Critical CSS inline or loaded first; avoid render blocking by unnecessary JS at the top.
+- **Vue**: Lazy-load routes (`() => import('./views/...')`); heavy components loaded on demand when possible.
+- **Hydration**: With SSR/SSG, keep payload minimal; above-the-fold components first.
+
+## General best practices
+
+- Do not load large libs for small tasks; prefer native APIs when sufficient.
+- Measure: Use Lighthouse (Performance, LCP, FID, CLS) and keep metrics acceptable.
+- Cache: Appropriate static cache headers in Express for versioned assets (hash in filename).
