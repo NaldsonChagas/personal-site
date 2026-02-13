@@ -2,7 +2,7 @@
 
 <template>
   <a
-    href="#"
+    href="/"
     class="text-lg md:text-xl font-bold tracking-tighter flex items-center gap-2 hover:opacity-90 transition-opacity"
     aria-label="naldson.dev home"
   >
