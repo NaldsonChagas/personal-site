@@ -34,6 +34,7 @@ index.html
 ## Notes
 
 - **Root `layouts/`**: Contains reference HTML and PNGs (`layouts/desktop/`, `layouts/mobile/`). Do not confuse with `src/layouts/desktop/`, which holds the Vue desktop layout component.
-- **Backend**: Code in `src/server/` (TypeScript). Serves static files from `dist/`; any request that does not match a file is redirected to `/` (single-page site).
+- **Backend**: Code in `src/server/` (TypeScript). Serves static files from `dist/`; requests that do not match a file are served `index.html` (SPA fallback). Compression (gzip) is enabled. Cache policy: hashed assets under `/assets/` use long-term cache (`max-age=31536000, immutable`); `index.html` and other static files use `no-cache` so deploys are picked up quickly.
+- **Performance**: The HTML entry adds preconnect and preload for Google Fonts to reduce time to first byte. The Vite build splits vendor (e.g. Vue, Vue Router) into a separate chunk for better browser cache reuse.
 - **CSS import order** (in `src/style.css`): Tailwind → variables → base → layout → components → utilities.
 - **Router**: Single route `/` by default; add more routes in `src/router/index.ts` and use lazy-loaded views when needed for performance.
