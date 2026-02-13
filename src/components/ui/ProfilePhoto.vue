@@ -1,12 +1,14 @@
 <script setup lang="ts">
-withDefaults(
+const props = withDefaults(
   defineProps<{
     src?: string;
     alt?: string;
+    eager?: boolean;
   }>(),
   {
     src: '/IMG_2003.jpg',
     alt: 'Naldson Bento Chagas',
+    eager: false,
   }
 );
 </script>
@@ -19,8 +21,9 @@ withDefaults(
         aria-hidden="true"
       />
       <img
-        :src="src"
-        :alt="alt"
+        :src="props.src"
+        :alt="props.alt"
+        :loading="props.eager ? 'eager' : 'lazy'"
         class="absolute inset-0 w-full h-full rounded-full md:rounded-2xl object-cover object-[center_top] border-4 md:border-2 border-white/10"
       />
       <slot />
