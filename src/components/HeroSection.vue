@@ -7,7 +7,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="relative overflow-hidden">
+  <div class="relative">
     <div
       class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12"
     >
@@ -47,7 +47,7 @@ const { t } = useI18n();
           </a>
         </div>
       </div>
-      <div class="order-1 md:order-2 md:w-1/2 flex justify-center">
+      <div class="order-1 md:order-2 md:w-1/2 flex justify-center pt-2 md:pt-0">
         <ProfilePhoto :alt="t('heroPhotoAlt')">
           <ExperienceBadge />
         </ProfilePhoto>

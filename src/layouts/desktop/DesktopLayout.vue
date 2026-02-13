@@ -25,7 +25,7 @@ import AppFooter from '@/components/AppFooter.vue';
             class="absolute bottom-[-10%] right-[-10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-blue-600 rounded-full blur-[80px] md:blur-[120px]"
           />
         </div>
-        <div class="relative z-10 pt-24 pb-16 md:pt-32 md:pb-20 px-6">
+        <div class="relative z-10 pt-[88px] pb-16 md:pt-32 md:pb-20 px-6">
           <HeroSection />
         </div>
       </header>

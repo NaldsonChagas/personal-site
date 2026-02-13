@@ -21,7 +21,7 @@ withDefaults(
       <img
         :src="src"
         :alt="alt"
-        class="absolute inset-0 w-full h-full rounded-full md:rounded-2xl object-cover border-4 md:border-2 border-white/10"
+        class="absolute inset-0 w-full h-full rounded-full md:rounded-2xl object-cover object-[center_top] border-4 md:border-2 border-white/10"
       />
       <slot />
     </div>
