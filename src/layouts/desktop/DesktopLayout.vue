@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import AppHeader from '@/components/AppHeader.vue';
-import HeroSection from '@/components/HeroSection.vue';
-import AboutSection from '@/components/AboutSection.vue';
-import CaseStudiesSection from '@/components/CaseStudiesSection.vue';
-import AppFooter from '@/components/AppFooter.vue';
+import AppHeader from '@/components/layout/AppHeader.vue';
+import HeroSection from '@/components/sections/HeroSection.vue';
+import AboutSection from '@/components/sections/AboutSection.vue';
+import CaseStudiesSection from '@/components/sections/CaseStudiesSection.vue';
+import AppFooter from '@/components/layout/AppFooter.vue';
 </script>
 
 <template>

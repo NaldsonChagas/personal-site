@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from '@/i18n/useI18n';
-import LangSwitch from '@/components/LangSwitch.vue';
+import LangSwitch from '@/components/ui/LangSwitch.vue';
 
 const { t } = useI18n();
 

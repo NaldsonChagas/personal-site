@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CaseStudyCard from '@/components/CaseStudyCard.vue';
+import CaseStudyCard from '@/components/ui/CaseStudyCard.vue';
 import type { CaseItem } from '@/data/cases';
 
 defineProps<{

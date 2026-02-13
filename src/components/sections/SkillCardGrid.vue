@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SkillCard from '@/components/SkillCard.vue';
+import SkillCard from '@/components/ui/SkillCard.vue';
 
 const skills = [
   {

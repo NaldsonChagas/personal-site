@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { useI18n } from '@/i18n/useI18n';
-import ContactHeadline from '@/components/ContactHeadline.vue';
-import ContactDescription from '@/components/ContactDescription.vue';
-import ContactLinkButton from '@/components/ContactLinkButton.vue';
-import FooterCredits from '@/components/FooterCredits.vue';
+import ContactHeadline from '@/components/sections/ContactHeadline.vue';
+import ContactDescription from '@/components/sections/ContactDescription.vue';
+import ContactLinkButton from '@/components/ui/ContactLinkButton.vue';
+import FooterCredits from '@/components/ui/FooterCredits.vue';
 
 const { t } = useI18n();
 </script>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import SectionHeading from '@/components/SectionHeading.vue';
-import AboutContent from '@/components/AboutContent.vue';
-import SkillCardGrid from '@/components/SkillCardGrid.vue';
+import SectionHeading from '@/components/ui/SectionHeading.vue';
+import AboutContent from '@/components/sections/AboutContent.vue';
+import SkillCardGrid from '@/components/sections/SkillCardGrid.vue';
 </script>
 
 <template>

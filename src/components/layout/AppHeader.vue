@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
-import AppLogo from '@/components/AppLogo.vue';
-import HeaderNav from '@/components/HeaderNav.vue';
-import LangSwitch from '@/components/LangSwitch.vue';
-import MobileMenuButton from '@/components/MobileMenuButton.vue';
-import MobileNavOverlay from '@/components/MobileNavOverlay.vue';
+import AppLogo from '@/components/ui/AppLogo.vue';
+import HeaderNav from '@/components/layout/HeaderNav.vue';
+import LangSwitch from '@/components/ui/LangSwitch.vue';
+import MobileMenuButton from '@/components/ui/MobileMenuButton.vue';
+import MobileNavOverlay from '@/components/layout/MobileNavOverlay.vue';
 
 const mobileMenuOpen = ref(false);
 

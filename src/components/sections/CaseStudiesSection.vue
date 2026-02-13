@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from '@/i18n/useI18n';
-import CaseStudyGrid from '@/components/CaseStudyGrid.vue';
+import CaseStudyGrid from '@/components/sections/CaseStudyGrid.vue';
 import { cases } from '@/data/cases';
 
 const { t } = useI18n();

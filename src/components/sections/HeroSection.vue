@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from '@/i18n/useI18n';
-import ProfilePhoto from '@/components/ProfilePhoto.vue';
-import ExperienceBadge from '@/components/ExperienceBadge.vue';
+import ProfilePhoto from '@/components/ui/ProfilePhoto.vue';
+import ExperienceBadge from '@/components/ui/ExperienceBadge.vue';
 
 const { t } = useI18n();
 </script>
