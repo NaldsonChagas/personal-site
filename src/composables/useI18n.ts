@@ -1,5 +1,5 @@
 import { ref, watch } from 'vue';
-import { messages, type Locale } from './messages';
+import { messages, type Locale } from '@/i18n/messages';
 
 function getInitialLocale(): Locale {
   if (typeof navigator === 'undefined') return 'en';

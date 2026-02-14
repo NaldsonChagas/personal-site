@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useI18n } from '@/i18n/useI18n';
+import { useI18n } from '@/composables';
 import type { CaseColor, CaseItem } from '@/data/cases';
 
 const props = defineProps<{

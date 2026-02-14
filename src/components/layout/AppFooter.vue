@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useI18n } from '@/i18n/useI18n';
+import { useI18n } from '@/composables';
 import ContactHeadline from '@/components/sections/ContactHeadline.vue';
 import ContactDescription from '@/components/sections/ContactDescription.vue';
 import ContactLinkButton from '@/components/ui/ContactLinkButton.vue';

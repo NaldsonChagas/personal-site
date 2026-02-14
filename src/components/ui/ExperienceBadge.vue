@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useI18n } from '@/i18n/useI18n';
+import { useI18n } from '@/composables';
 
 const { t } = useI18n();
 
