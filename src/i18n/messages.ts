@@ -94,7 +94,7 @@ export const messages: Record<Locale, Record<string, string>> = {
     contactDescriptionLong:
       "Seeking a Senior Backend Engineer to architect systems or modernize legacy platforms? Let's connect.",
     contactDescriptionShort: "Seeking a Senior Backend Engineer? Let's connect.",
-    contactEmailLabel: 'contact@naldson.dev',
+    contactEmailLabel: 'naldson.bc@gmail.com',
     contactLinkedInLabel: 'LinkedIn Profile',
     footerCopyright: '© 2026 Naldson Bento Chagas.',
     footerTagSeniorBackend: 'Senior Backend',
@@ -194,7 +194,7 @@ export const messages: Record<Locale, Record<string, string>> = {
     contactDescriptionLong:
       'Procurando um Engenheiro Backend Sênior para arquitetar sistemas ou modernizar plataformas legadas? Vamos conversar.',
     contactDescriptionShort: 'Procurando um Engenheiro Backend Sênior? Vamos conversar.',
-    contactEmailLabel: 'contact@naldson.dev',
+    contactEmailLabel: 'naldson.bc@gmail.com',
     contactLinkedInLabel: 'Perfil LinkedIn',
     footerCopyright: '© 2026 Naldson Bento Chagas.',
     footerTagSeniorBackend: 'Backend Sênior',
