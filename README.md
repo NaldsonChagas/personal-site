@@ -56,5 +56,3 @@ docker compose up --build -d
 # Stop
 docker compose down
 ```
-
-The app is available at `http://localhost:3000`.
